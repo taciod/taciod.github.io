@@ -160,16 +160,23 @@ function ButtonClick(btn) {
     }
 
     if (isNum) {
-
         if (numDisplay1 == "" || isDone) {
-            //Display first number
-            numString1 = numString1 + num;
-            document.getElementById("rowOne").innerHTML = numString1;
-
+            debugger;
+            if (num == '.' && numString1.includes(".")) {
+                
+            } else {
+                //Display first number
+                numString1 = numString1 + num;
+                document.getElementById("rowOne").innerHTML = numString1;
+            }
         } else {
-            //Display second number
-            numString2 = numString2 + num;
-            document.getElementById("rowOne").innerHTML = numString2
+            if (num == '.' && numString2.includes(".")) {} else
+
+            {
+                //Display second number
+                numString2 = numString2 + num;
+                document.getElementById("rowOne").innerHTML = numString2
+            }
         }
         isDone = false;
     } else if (isOperation) {
