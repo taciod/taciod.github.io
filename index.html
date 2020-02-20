@@ -2,32 +2,126 @@
 <html>
 <title>CMSC 207 Calculator</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
 <head>
-	<title>Page Title</title>
+	<title>Calculator as Assigment for CMSC 2017 Web Programming and Develop</title>
 </head>
+
 <body>
+	<div class="row">
+		<div class="col-4"></div>
 
-<h1>Test</h1>
-<p></p>
+		<!-- Calculator Section -->
+		<div class="col-4 col-s-12">
+			<div class="row">
+				<div class="col-12">
+					<h4 class="center">CALCULATOR</h4>
+					<h5 class="center">CMSC 207 - Web Programming and Development</h5>
+				</div>
+			</div>
+
+			<!-- Output Display -->
+			<div class="row">
+				<div class="col-12">
+					<div id="rowTwo" class="numdisplay"></div>
+					<div id="rowOne" class="numdisplay"></div>
+				</div>
+			</div>
+
+			<!-- Row 1 [Clear Delete] -->
+			<div class="row">
+				<div class="col-6 col-s-6">
+					<div id="BtnClear" class="numbtn">Clear All</div>
+				</div>
+				<div class="col-6 col-s-6">
+					<div id="BtnDel" class="numbtn">&lt-</div>
+					</div>
+				</div>
 
 
-<table style="width:100%">
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-  </tr>
-</table>
+				<!-- Row 2 [789] -->
+				<div class="row">
+					<div class="col-3 col-s-3">
+						<div id="BtnSeven" class="numbtn">7</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnEight" class="numbtn">8</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnNine" class="numbtn">9</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnDivide" class="numbtn">/</div>
+					</div>
+				</div>
+
+				<!-- Row 3 [456] -->
+				<div class="row">
+					<div class="col-3 col-s-3">
+						<div id="BtnFour" class="numbtn">4</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnFive" class="numbtn">5</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnSix" class="numbtn">6</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnTimes" class="numbtn">*</div>
+					</div>
+
+				</div>
+
+				<!-- Row 4 [123] -->
+				<div class="row">
+					<div class="col-3 col-s-3">
+						<div id="BtnOne" class="numbtn">1</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnTwo" class="numbtn">2</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnThree" class="numbtn">3</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnMinus" class="numbtn">-</div>
+					</div>
+
+				</div>
+
+				<!-- Row 5 [0] -->
+				<div class="row">
+					<div class="col-3 col-s-3">
+						<div id="BtnSign" class="numbtn">+/-</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnZero" class="numbtn">0</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnDot" class="numbtn">.</div>
+					</div>
+					<div class="col-3 col-s-3">
+						<div id="BtnPlus" class="numbtn">+</div>
+					</div>
+				</div>
+
+				<!-- Output Display -->
+				<div class="row">
+					<div class="col-12 col-s-12">
+						<div id="BtnEqual" class="numbtn">=</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-4">
+			</div>
+		</div>
+
+		<script src="app.js">
+		</script>
 
 </body>
+
 </html>
